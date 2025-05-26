@@ -63,7 +63,7 @@ export function EnvironmentResultsCard({ envTestData }: EnvironmentResultsCardPr
       </CardHeader>
       <CardContent>
         {suites.length > 0 ? (
-          <Accordion type="multiple" collapsible className="w-full" defaultValue={suites.map(s => s.id)}>
+          <Accordion type="multiple" className="w-full" defaultValue={suites.map(s => s.id)}>
             {suites.map((suite: TestSuite) => (
               <AccordionItem value={suite.id} key={suite.id} className="mb-2 border bg-muted/20 rounded-md">
                 <AccordionTrigger className="px-4 py-3 text-base font-semibold hover:no-underline">
